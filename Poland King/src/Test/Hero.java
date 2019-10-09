@@ -61,37 +61,24 @@ public class Hero {
 	}
 	//Spell
 	
-	public Spell[] getSpell() {
+	public Spell[] getSpellList() {
 		return spell;
 	}
-	
-	public Spell getSpell1() {
-		return spell[0];
+	//Rank must be between 0 and 2
+	public Spell getSpell(int rank) {
+		return spell[rank];
 	}
 	
-	public Spell getSpell2() {
-		return spell[1];
-	}
 	
-	public Spell getSpell3() {
-		return spell[2];
-	}
-	
-	public void setSpell1(Spell[] newSpellList) {
+	public void setSpellList(Spell[] newSpellList) {
 		spell = newSpellList ;
 	}
 	
-	public void setSpell1(Spell newSpell) {
-		spell[0] = newSpell;
-	}
+	//Rank must be between 0 and 2
+		public void setSpell(Spell newSpell, int rank) {
+			spell[rank] = newSpell;
+		}
 	
-	public void setSpell2(Spell newSpell) {
-		spell[1] = newSpell;
-	}
-	
-	public void setSpell3(Spell newSpell) {
-		spell[2] = newSpell;
-	}
 	
 	
 }
