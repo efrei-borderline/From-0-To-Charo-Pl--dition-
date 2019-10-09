@@ -4,6 +4,7 @@ public class Hero {
 	private String name;
 	private int lvl;
 	private double pv;
+	private int Speed; // 0 to 100->is the best
 	private Spell[] spell;
 	//Exp exp;
 	//Equipment equipment;
@@ -14,6 +15,7 @@ public class Hero {
 		lvl = 1;
 		name = "[Blank]";
 		pv = 500d;
+		Speed = 50;
 		spell = new Spell[3];
 		spell[0] = new Spell();
 	}
@@ -59,6 +61,17 @@ public class Hero {
 	public void pvSwitch(double amount) {
 		pv += amount;
 	}
+	
+	//Speed
+
+	public int getSpeed() {
+		return Speed;
+	}
+	
+	public void setSpeed(int newSpeed) {
+		Speed = newSpeed;
+	}
+	
 	//Spell
 	
 	public Spell[] getSpellList() {
